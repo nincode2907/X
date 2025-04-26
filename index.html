@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Săn Deal Shopee Toàn Cầu!" />
-    <meta property="og:description" content="Hay lắm nha" />
-    <meta property="og:image" content="https://images2.thanhnien.vn/528068263637045248/2024/1/25/e093e9cfc9027d6a142358d24d2ee350-65a11ac2af785880-17061562929701875684912.jpg" />
-    <meta property="og:url" content="https://s.shopee.vn/8fFK3aszUS" />
+    <meta property="og:description" content="Mua sắm khắp thế giới, săn deal siêu hời – Tham gia ngay trước 30/11/2025!" />
+    <meta property="og:image" content="https://nincode2907.github.io/X/pic.png" />
+    <meta property="og:url" content="https://nincode2907.github.io/X/" />
     <title>Video và Website Chia Đôi Màn Hình</title>
     <style>
         body, html {
@@ -29,22 +29,11 @@
             position: relative;
             overflow: hidden;
         }
-        .video-section video {
+        .video-section img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             cursor: pointer;
-        }
-        .video-section .controls {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         .website-section {
             flex: 1;
@@ -55,24 +44,16 @@
 <body>
     <div class="container">
         <div class="video-section">
-            <video id="myVideo" controls>
-                <source src="https://example.com/your-video.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ thẻ video.
-            </video>
+            <img src="https://nincode2907.github.io/X/pic.png" alt="Shopee Promo">
         </div>
-        <iframe class="website-section" src="https://s.shopee.vn/8fFK3aszUS" frameborder="0"></iframe>
+        <div class="website-section">
+            <a href="https://s.shopee.vn/8fFK3aszUS" target="_blank" style="display: block; text-align: center; padding: 10px; background: #ff6200; color: white; text-decoration: none;">Mua Ngay trên Shopee!</a>
+        </div>
     </div>
     <script>
-        const video = document.getElementById('myVideo');
-        video.addEventListener('click', function(event) {
-            // Kiểm tra nếu click không phải vào controls
-            const controls = video.querySelector('.controls');
-            const rect = video.getBoundingClientRect();
-            const clickY = event.clientY - rect.top;
-            const controlsHeight = 50; // Ước lượng chiều cao của thanh controls
-            if (clickY < rect.height - controlsHeight) {
-                window.location.href = 'https://s.shopee.vn/8fFK3aszUS'; // Thay bằng link mong muốn
-            }
+        const imageSection = document.querySelector('.video-section img');
+        imageSection.addEventListener('click', function() {
+            window.location.href = 'https://s.shopee.vn/8fFK3aszUS';
         });
     </script>
 </body>
